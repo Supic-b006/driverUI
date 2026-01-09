@@ -75,6 +75,7 @@
 <h1 class="text-3xl font-bold text-text-light dark:text-text-dark mb-1">Select Items</h1>
 <p class="text-sm text-gray-500 dark:text-gray-400 font-medium">Available for pickup nearby</p>
 </div>
+        
 <div class="flex-1 overflow-y-auto px-6 pb-28 space-y-4">
         <a href="itemDetails.html" >
                 <div class="group relative bg-surface-light dark:bg-surface-dark p-4 rounded-2xl shadow-sm hover:shadow-md border border-transparent dark:border-gray-700 transition-all duration-300 cursor-pointer">
@@ -167,12 +168,11 @@
 </div>
 </div>
 
-<!-- Dark mode toggle -->
-<button
-  class="fixed bottom-28 right-6 bg-primary text-white p-3 rounded-full shadow-lg hover:bg-orange-600 transition z-50"
-  onclick="document.documentElement.classList.toggle('dark')">
-  <span class="material-icons-round block dark:hidden">dark_mode</span>
-  <span class="material-icons-round hidden dark:block">light_mode</span>
+<div class="absolute top-6 right-6 z-20">
+<button class="p-2 rounded-full bg-gray-200 dark:bg-surface-dark text-gray-600 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors" onclick="document.documentElement.classList.toggle('dark')">
+<span class="material-icons-round dark:hidden text-sm">dark_mode</span>
+<span class="material-icons-round hidden dark:block text-sm">light_mode</span>
 </button>
+</div>
 
 </body></html>
