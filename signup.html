@@ -103,13 +103,12 @@
 </p>
 </div>
 </div>
-<script>
-        // Check for saved user preference, if any, on load of the website
-        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            document.documentElement.classList.add('dark')
-        } else {
-            document.documentElement.classList.remove('dark')
-        }
-    </script>
+
+<div class="absolute top-6 right-6 z-20">
+<button class="p-2 rounded-full bg-gray-200 dark:bg-surface-dark text-gray-600 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors" onclick="document.documentElement.classList.toggle('dark')">
+<span class="material-icons-round dark:hidden text-sm">dark_mode</span>
+<span class="material-icons-round hidden dark:block text-sm">light_mode</span>
+</button>
+</div>
 
 </body></html>
