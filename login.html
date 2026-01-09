@@ -107,9 +107,12 @@
             </p>
 </div>
 </div>
-<button class="fixed bottom-4 right-4 p-3 bg-white dark:bg-surface-dark rounded-full shadow-lg border border-gray-200 dark:border-gray-700 text-gray-800 dark:text-white z-50 hover:scale-110 transition-transform" onclick="document.documentElement.classList.toggle('dark')">
-<span class="material-symbols-outlined block dark:hidden">dark_mode</span>
-<span class="material-symbols-outlined hidden dark:block">light_mode</span>
+
+<div class="absolute top-6 right-6 z-20">
+<button class="p-2 rounded-full bg-gray-200 dark:bg-surface-dark text-gray-600 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors" onclick="document.documentElement.classList.toggle('dark')">
+<span class="material-icons-round dark:hidden text-sm">dark_mode</span>
+<span class="material-icons-round hidden dark:block text-sm">light_mode</span>
 </button>
+</div>
 
 </body></html>
