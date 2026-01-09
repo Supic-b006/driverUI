@@ -128,11 +128,12 @@ html { scroll-behavior: smooth; }
 
 </div>
         
-<button
-  class="fixed bottom-28 right-6 bg-primary text-white p-3 rounded-full shadow-lg hover:bg-orange-600 transition z-50"
-  onclick="document.documentElement.classList.toggle('dark')">
-  <span class="material-icons-round">dark_mode</span>
+<div class="absolute top-6 right-6 z-20">
+<button class="p-2 rounded-full bg-gray-200 dark:bg-surface-dark text-gray-600 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors" onclick="document.documentElement.classList.toggle('dark')">
+<span class="material-icons-round dark:hidden text-sm">dark_mode</span>
+<span class="material-icons-round hidden dark:block text-sm">light_mode</span>
 </button>
+</div>
 
 </body>
 </html>
