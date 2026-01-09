@@ -131,50 +131,30 @@
 </div>
 </section>
 </main>
-<nav class="fixed bottom-0 w-full max-w-md z-50 bg-white/90 dark:bg-[#222831]/95 backdrop-blur-md border-t border-gray-200 dark:border-gray-700 pb-safe pt-2">
-<div class="flex justify-around items-center px-2 pb-4 pt-2">
-<a class="flex flex-col items-center justify-center w-16 gap-1 group" href="#">
-<div class="bg-orange-100 dark:bg-orange-900/30 px-4 py-1 rounded-full transition-colors">
-<span class="material-symbols-rounded text-primary text-2xl">home</span>
-</div>
-<span class="text-[10px] font-medium text-primary">Home</span>
-</a>
+  <nav class="absolute bottom-0 left-0 right-0 h-20 bg-surface-light dark:bg-surface-dark border-t border-gray-200 dark:border-gray-700 flex justify-around items-center">
 
-<a
-  class="flex flex-col items-center justify-center w-16 gap-1 group text-text-sub-light dark:text-text-sub-dark hover:text-primary dark:hover:text-primary transition-colors"
-  href="history.html"
->
-  <div class="px-4 py-1 rounded-full transition-colors">
-    <span class="material-symbols-rounded text-2xl">receipt_long</span>
-  </div>
-  <span class="text-[10px] font-medium">History</span>
-</a>
+    <a href="home.html" class="flex flex-col items-center gap-1 text-gray-400 hover:text-primary">
+      <span class="material-icons-round text-2xl">home</span>
+      <span class="text-[10px] font-medium">Home</span>
+    </a>
 
-<a
-  class="flex flex-col items-center justify-center w-16 gap-1 group text-text-sub-light dark:text-text-sub-dark hover:text-primary dark:hover:text-primary transition-colors"
-  href="notification.html"
->
-  <div class="relative px-4 py-1 rounded-full transition-colors">
-    <span class="material-symbols-rounded text-2xl">notifications</span>
-    <span
-      class="absolute top-1 right-3 w-2 h-2 bg-red-500 rounded-full border border-white dark:border-background-dark"
-    ></span>
-  </div>
-  <span class="text-[10px] font-medium">Notifications</span>
-</a>
+    <a href="history.html" class="flex flex-col items-center gap-1 text-gray-400 hover:text-primary">
+      <span class="material-icons-round text-2xl">receipt_long</span>
+      <span class="text-[10px] font-medium">History</span>
+    </a>
 
-<a
-  class="flex flex-col items-center justify-center w-16 gap-1 group text-text-sub-light dark:text-text-sub-dark hover:text-primary dark:hover:text-primary transition-colors"
-  href="#"
->
-  <div class="px-4 py-1 rounded-full transition-colors">
-    <span class="material-symbols-rounded text-2xl">account_circle</span>
-  </div>
-  <span class="text-[10px] font-medium">Account</span>
-</a>
+    <a href="notification.html" class="relative flex flex-col items-center gap-1 text-gray-400 hover:text-primary">
+      <span class="material-icons-round text-2xl">mail</span>
+      <span class="absolute top-1 right-3 w-2.5 h-2.5 bg-red-500 rounded-full"></span>
+      <span class="text-[10px] font-medium">Notify</span>
+    </a>
 
-</div>
-</nav>
+    <a href="account.html" class="flex flex-col items-center gap-1 text-primary">
+      <span class="material-icons-round text-2xl">account_circle</span>
+      <span class="text-[10px] font-medium">Account</span>
+    </a>
+
+  </nav>
 </div>
 <button aria-label="Toggle Dark Mode" class="fixed bottom-24 right-6 p-3 bg-primary text-white rounded-full shadow-lg z-50 hover:bg-orange-600 transition-colors" onclick="document.documentElement.classList.toggle('dark')">
 <span class="material-symbols-rounded block dark:hidden">dark_mode</span>
